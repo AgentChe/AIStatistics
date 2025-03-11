@@ -68,10 +68,8 @@
 		DEF507322D1E88D900C41552 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506492D1E88D900C41552 /* UITapGestureRecognizer+Extension.swift */; };
 		DEF507332D1E88D900C41552 /* AssistantResultTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF5067D2D1E88D900C41552 /* AssistantResultTableElement.swift */; };
 		DEF507342D1E88D900C41552 /* ARTLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506792D1E88D900C41552 /* ARTLoadingCell.swift */; };
-		DEF507352D1E88D900C41552 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506322D1E88D900C41552 /* BranchManager.swift */; };
 		DEF507362D1E88D900C41552 /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506F52D1E88D900C41552 /* IAPError.swift */; };
 		DEF507372D1E88D900C41552 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506C72D1E88D900C41552 /* OnboardingView.swift */; };
-		DEF507382D1E88D900C41552 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506332D1E88D900C41552 /* FacebookManager.swift */; };
 		DEF507392D1E88D900C41552 /* IAPErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506F62D1E88D900C41552 /* IAPErrorHelper.swift */; };
 		DEF5073A2D1E88D900C41552 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506442D1E88D900C41552 /* String+Extension.swift */; };
 		DEF5073B2D1E88D900C41552 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF506CA2D1E88D900C41552 /* Currency.swift */; };
@@ -182,8 +180,6 @@
 		DEF506232D1E88D000C41552 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		DEF506262D1E88D000C41552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DEF506312D1E88D900C41552 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		DEF506322D1E88D900C41552 /* BranchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
-		DEF506332D1E88D900C41552 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		DEF506342D1E88D900C41552 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DEF506362D1E88D900C41552 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DEF506372D1E88D900C41552 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
@@ -430,8 +426,6 @@
 			isa = PBXGroup;
 			children = (
 				DEF506312D1E88D900C41552 /* AmplitudeManager.swift */,
-				DEF506322D1E88D900C41552 /* BranchManager.swift */,
-				DEF506332D1E88D900C41552 /* FacebookManager.swift */,
 				DEF506342D1E88D900C41552 /* FirebaseManager.swift */,
 			);
 			path = Analytics;
@@ -1301,10 +1295,8 @@
 				DEF507322D1E88D900C41552 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DEF507332D1E88D900C41552 /* AssistantResultTableElement.swift in Sources */,
 				DEF507342D1E88D900C41552 /* ARTLoadingCell.swift in Sources */,
-				DEF507352D1E88D900C41552 /* BranchManager.swift in Sources */,
 				DEF507362D1E88D900C41552 /* IAPError.swift in Sources */,
 				DEF507372D1E88D900C41552 /* OnboardingView.swift in Sources */,
-				DEF507382D1E88D900C41552 /* FacebookManager.swift in Sources */,
 				DEF507392D1E88D900C41552 /* IAPErrorHelper.swift in Sources */,
 				DEF5073A2D1E88D900C41552 /* String+Extension.swift in Sources */,
 				DEF5073B2D1E88D900C41552 /* Currency.swift in Sources */,
@@ -1424,7 +1416,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RXCT63549X;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1441,7 +1433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.statistics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1464,7 +1456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RXCT63549X;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1481,7 +1473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.statistics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
